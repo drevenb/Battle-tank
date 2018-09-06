@@ -76,3 +76,8 @@ Content/StarterContent/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+#OtherFiles
+Content/Chris-Folea-MountainRange3.png
+Content/Chris-Folea-MountainRange3.uasset
+Content/BattleGround_High.umap
