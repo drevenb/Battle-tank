@@ -2,6 +2,7 @@
 
 #include "TankAIController.h"
 
+//Called when the game starts or when spawned
 void ATankAIController::BeginPlay() 
 {
 	Super::BeginPlay();
