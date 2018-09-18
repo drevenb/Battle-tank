@@ -4,6 +4,9 @@
 
 #include "CoreMinimal.h"
 #include "Tank.h"
+#include "Vector.h"
+#include "GameFramework/Pawn.h"
+#include "Engine/World.h"
 #include "GameFramework/PlayerController.h"
 #include "TankPlayerController.generated.h" //Must be the last include
 
@@ -26,4 +29,11 @@ private:
 	//the crosshair intersects the world
 	void AimTowardsCrosshair();
 
+	//Return an OUT parameter, true if hit landscape
+	bool GetSightRayHitLocation(FVector& OutHitLocation) const;
+
+	UPROPERTY(EditAnywhere)
+	float CrossHairXLocation = 0.5f;
+	UPROPERTY(EditAnywhere)
+	float CrossHairYLocation = 0.33333f;
 };
